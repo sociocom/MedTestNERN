@@ -1,5 +1,5 @@
 MedNERN-CR-JA にバイオマーカの正規化機能を追加したバージョンです．
-MedNERN-CR-JA関して詳しくは，[MedNERN-CR-JA GitHub page](https://github.com/sociocom/MedNERN-CR-JA)をご覧ください．
+MedNERN-CR-JA 関して詳しくは，[MedNERN-CR-JA GitHub page](https://github.com/sociocom/MedNERN-CR-JA)をご覧ください．
 
 モデルは[HuggingFace model page](https://huggingface.co/sociocom/MedNERN-CR-JA)よりダウンロードしてください．
 
@@ -105,14 +105,14 @@ uv run python predict.py --normalize \
 ### Input Example
 
 ```
-右乳癌生検標本（H11-1111）の免疫染色。
-ERとPRは陽性である（陽性細胞はそれぞれ11％および1-1％。MB-1 indexは約11％である。
+ERとPRは陽性である（陽性細胞はそれぞれ15％および1-5％。MB-1 indexは約23％である。）
+抗ＨＥＲ２抗体 score 1＋．
 ```
 
 ### Output Example
 
 ```
-<t-test state="executed">右乳癌生検</t-test>標本（<d norm="I10">H</d>11-1111）の免疫染色。
-<t-key norm="ER, PgR (PR)">ERとPR</t-key>は<t-val>陽性</t-val>である（<a>陽性細胞</a>はそれぞれ<t-val>11％</t-val>および<t-val>1-1％</t-val>。
-<t-key norm="Ki-67">MB-1 index</t-key>は約11％である。
+<t-key norm="ER, PgR (PR)">ERとPR</t-key>は<t-val>陽性</t-val>である（<a>陽性細胞</a>はそれぞれ<t-val>15％</t-val>および<t-val>1-5％</t-val>。
+<t-key norm="Ki-67">MB-1 index</t-key>は約23％である。）
+<t-key norm="HER2">抗ＨＥＲ２抗体</t-key> <t-val>score 1＋．</t-val>
 ```
