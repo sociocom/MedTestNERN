@@ -1,2 +1,11 @@
 /model_BIO/
 /lightning_logs/
+
+/data/
+/dictionaries/
+.DS_Store
+
+
+/notebooks/
+pytorch_model.bin
+*.pyc
