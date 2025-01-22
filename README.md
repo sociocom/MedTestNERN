@@ -1,5 +1,5 @@
 MedNERN-CR-JA にバイオマーカの正規化機能を追加したバージョンです．
-詳しくは，[MedNERN-CR-JA GitHub page](https://github.com/sociocom/MedNERN-CR-JA)をご覧ください．
+MedNERN-CR-JA関して詳しくは，[MedNERN-CR-JA GitHub page](https://github.com/sociocom/MedNERN-CR-JA)をご覧ください．
 
 モデルは[HuggingFace model page](https://huggingface.co/sociocom/MedNERN-CR-JA)よりダウンロードしてください．
 
